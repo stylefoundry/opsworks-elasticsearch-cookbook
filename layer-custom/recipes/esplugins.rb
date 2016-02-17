@@ -3,7 +3,7 @@ script "install_plugin_es_hq" do
 	user "root"
 	cwd "#{node.elasticsearch[:dir]}/elasticsearch-#{node.elasticsearch[:version]}/bin/"
 	code <<-EOH
-  	plugin -install royrusso/elasticsearch-HQ
+  	plugin install royrusso/elasticsearch-HQ
   	EOH
 	not_if { File.exist?("#{node.elasticsearch[:dir]}/elasticsearch-#{node.elasticsearch[:version]}/plugins/HQ") }
 end
