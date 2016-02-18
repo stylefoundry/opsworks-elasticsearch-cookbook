@@ -1,0 +1,91 @@
+DEPENDENCIES
+  apt (>= 2.3.8)
+  ark
+    git: git://github.com/opscode-cookbooks/ark.git
+    revision: efda6a9b8437ebe45d8770fbb11d8847eea365a9
+    tag: v0.9.0
+  bluepill
+    git: git://github.com/opscode-cookbooks/bluepill.git
+    revision: 085a3fe714837b53fd1bc496df83283f5933d2d2
+    tag: v2.3.1
+  build-essential
+    git: git://github.com/opscode-cookbooks/build-essential.git
+    revision: 075dff33c4a348c5def894f208852d3dc8c4c543
+    tag: v2.1.2
+  elasticsearch
+    git: https://github.com/stylefoundry/cookbook-elasticsearch.git
+    revision: fea8d5a49191580b2941ccfa35146ef3d91d13a7
+  java
+    git: git://github.com/opscode-cookbooks/java.git
+    revision: 67d455044ed30ffdb172038121cd7df0b3bf3385
+    tag: v1.28.0
+  mongodb
+    git: git://github.com/edelight/chef-mongodb
+    revision: dc5836318a27331f605f264d946931927dd26bb8
+  monit
+    git: git://github.com/apsoto/monit.git
+    revision: ac3793f37d4f7ca7e4174cfa9a64f8b6948fff44
+  ohai
+    git: git://github.com/opscode-cookbooks/ohai.git
+    revision: 91bf52182721c5ca7c61f6795f04876270348fb6
+    tag: v2.0.1
+  papertrail
+    git: git://github.com/librato/papertrail-cookbook
+    revision: 66021c3929af4755aaf9dde2717a1a6e369ab533
+    tag: 0.0.7
+  python
+    git: git://github.com/poise/python.git
+    revision: f9861f908a9a1abdc31d0468aaa3fa6936b9e5c2
+    tag: v1.4.6
+  rsyslog
+    git: git://github.com/opscode-cookbooks/rsyslog.git
+    revision: d5f9f83a1c5d7cba8241bfb9d282ebd6ee958b16
+    tag: v1.11.0
+  windows
+    git: git://github.com/opscode-cookbooks/windows.git
+    revision: e19da06b22f8f3ee7d340f84e624e620b439c7a0
+    tag: v1.30.2
+  yum
+    git: git://github.com/opscode-cookbooks/yum.git
+    revision: cdb4a089fed8f370470607ae47bce7966c070f89
+    tag: v3.4.0
+  yum-epel
+    git: git://github.com/opscode-cookbooks/yum-epel.git
+    revision: 3a747556afd43c07d7a55de50cfe2f61d8fe7e17
+    tag: v0.5.1
+
+GRAPH
+  7-zip (1.0.2)
+    windows (>= 1.2.2)
+  apt (2.9.2)
+  ark (0.9.0)
+    7-zip (>= 0.0.0)
+    windows (>= 0.0.0)
+  bluepill (2.3.1)
+    rsyslog (>= 0.0.0)
+  build-essential (2.1.2)
+  chef-sugar (3.3.0)
+  chef_handler (1.3.0)
+  elasticsearch (2.1.0)
+    apt (>= 0.0.0)
+    ark (>= 0.0.0)
+    chef-sugar (>= 0.0.0)
+    yum (>= 0.0.0)
+  java (1.28.0)
+  mongodb (0.16.3)
+    apt (>= 1.8.2)
+    python (>= 0.0.0)
+    yum (>= 3.0.0)
+  monit (0.7.5)
+  ohai (2.0.1)
+  papertrail (0.0.7)
+    rsyslog (>= 0.0.0)
+  python (1.4.6)
+    build-essential (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  rsyslog (1.11.0)
+  windows (1.30.2)
+    chef_handler (>= 0.0.0)
+  yum (3.4.0)
+  yum-epel (0.5.1)
+    yum (~> 3.0)
