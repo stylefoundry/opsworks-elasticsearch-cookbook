@@ -4,6 +4,10 @@
 Style/ClassAndModuleChildren:
   Enabled: false
 
+# Allow if statements!
+Style/GuardClause:
+  Enabled: false
+
 # Allow more complex ruby methods
 Metrics/AbcSize:
   Max: 55
@@ -36,14 +40,10 @@ IfUnlessModifier:
 
 # Raise allowed CyclomaticComplexity & Perceivedto 10.
 CyclomaticComplexity:
-  Max: 15
+  Max: 25
 
 Metrics/PerceivedComplexity:
-  Max: 15
-
-# Disable Single Space before first arg
-SingleSpaceBeforeFirstArg:
-  Enabled: false
+  Max: 25
 
 # Don't force a word array unless 5 elements
 WordArray:
@@ -61,9 +61,12 @@ Style/HashSyntax:
 Style/RescueModifier:
   Enabled: false
 
+Style/AccessorMethodName:
+  Enabled: false
+
 # allow larger modules
 Metrics/ModuleLength:
-  Max: 125
+  Max: 150
 
 # There are too many non-ruby files that run up against rubocop rules in a cookbook
 AllCops:

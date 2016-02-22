@@ -13,8 +13,8 @@ DEPENDENCIES
     revision: 075dff33c4a348c5def894f208852d3dc8c4c543
     tag: v2.1.2
   elasticsearch
-    git: https://github.com/stylefoundry/cookbook-elasticsearch.git
-    revision: fea8d5a49191580b2941ccfa35146ef3d91d13a7
+    git: https://github.com/elastic/cookbook-elasticsearch.git
+    revision: 0a67d374a0f942f68183e6fd487e9b4857cd102b
   java
     git: git://github.com/opscode-cookbooks/java.git
     revision: 67d455044ed30ffdb172038121cd7df0b3bf3385
@@ -66,7 +66,8 @@ GRAPH
   build-essential (2.1.2)
   chef-sugar (3.3.0)
   chef_handler (1.3.0)
-  elasticsearch (2.1.0)
+  compat_resource (12.7.3)
+  elasticsearch (2.2.0)
     apt (>= 0.0.0)
     ark (>= 0.0.0)
     chef-sugar (>= 0.0.0)
