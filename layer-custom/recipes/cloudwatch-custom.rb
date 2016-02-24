@@ -6,7 +6,7 @@ template "/usr/local/bin/cloudwatch-custom.sh" do
   mode "0550"
   owner "root"
   group "root"
-  variables instance.merge(app)
+  variables instance
 end
 
 # Cron it so that it runs every minute
