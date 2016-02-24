@@ -19,6 +19,8 @@ DEPENDENCIES
     git: git://github.com/opscode-cookbooks/java.git
     revision: 67d455044ed30ffdb172038121cd7df0b3bf3385
     tag: v1.28.0
+  layer-custom
+    path: layer-custom
   mongodb
     git: git://github.com/edelight/chef-mongodb
     revision: dc5836318a27331f605f264d946931927dd26bb8
@@ -73,6 +75,9 @@ GRAPH
     chef-sugar (>= 0.0.0)
     yum (>= 0.0.0)
   java (1.28.0)
+  layer-custom (0.0.0)
+    elasticsearch (>= 0.0.0)
+    monit (>= 0.0.0)
   mongodb (0.16.3)
     apt (>= 1.8.2)
     python (>= 0.0.0)

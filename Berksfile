@@ -15,3 +15,4 @@ cookbook 'yum-epel', '>= 0.3.4', git: 'git://github.com/opscode-cookbooks/yum-ep
 cookbook 'elasticsearch', git: 'https://github.com/elastic/cookbook-elasticsearch.git'
 cookbook 'mongodb', git: 'git://github.com/edelight/chef-mongodb'
 cookbook 'papertrail', git: 'git://github.com/librato/papertrail-cookbook', tag: '0.0.7'
+cookbook 'layer-custom', path: './layer-custom'
