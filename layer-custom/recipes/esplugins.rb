@@ -13,3 +13,7 @@ elasticsearch_plugin 'elasticsearch-HQ' do
   url 'royrusso/elasticsearch-HQ'
   action :install
 end
+
+elasticsearch_plugin 'cloud-aws' do
+  action :install
+end
