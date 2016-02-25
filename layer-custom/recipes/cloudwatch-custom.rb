@@ -1,12 +1,13 @@
 # Create script that pushes custom metrics into Cloudwatch
-#
 instance = search("aws_opsworks_instance", "self:true").first
+template_vars = {}
+template_vars['instance'] = instance
 template "/usr/local/bin/cloudwatch-custom.sh" do
   source "elasticsearch.cloudwatch-custom.sh.erb"
   mode "0550"
   owner "root"
   group "root"
-  variables instance
+  variables template_vars
 end
 
 # Cron it so that it runs every minute
